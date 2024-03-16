@@ -27,8 +27,10 @@ Thank you for showing interest in this project. The project can be made successf
 Alternate from step 3
 3. Create a python virtual environment `python3 -m venv .` or `python -m venv .` (for Windows)
 4. Run `pip3 install -r requirements.txt` to install all dependencies.
-5. Run `python3 manage.py runserver` or `python manage.py runserver` (for Windows).
-6. The web app shall now be running.
+5. Run `python3 manage.py makemigrations` or `python3 manage.py makemigrations` (for Windows).
+6. Run `python3 manage.py migrate` or `python3 manage.py migrate` (for Windows).
+7. Run `python3 manage.py runserver` or `python manage.py runserver` (for Windows).
+
 
 #### Extra files
 If you want to use a database in your project to test the app `cd` into the root directory of the project and create a new file called `db.sqlite3`. This file will be ignored while staging. You are also expected to not include this file in your contribution / pull request.
