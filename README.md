@@ -9,9 +9,9 @@ Thank you for showing interest in this project. The project can be made successf
 
 ### Roadmap
 
-[ ] Implement the basic UI for the project
-[ ] Use various python libraries to implement a graph plotting application which allows users to manually create a database or upload a .csv/.txt file to import data
-[ ] Implement a data storage system and user login system. Users should be able to store upto 200 MB of data in the server.
+- [ ] Implement the basic UI for the project
+- [ ] Use various python libraries to implement a graph plotting application which allows users to manually create a database or upload a .csv/.txt file to import data
+- [ ] Implement a data storage system and user login system. Users should be able to store upto 200 MB of data in the server.
 
 > [!IMPORTANT]
 > You should not change anything in the `LICENSE` file. Doing so will result in rejection of your Pull Request straight away.
@@ -25,6 +25,7 @@ Thank you for showing interest in this project. The project can be made successf
 5. Your container should be now running.
 
 Alternate from step 3
+
 3. Create a python virtual environment `python3 -m venv .` or `python -m venv .` (for Windows)
 4. Run `pip3 install -r requirements.txt` to install all dependencies.
 5. Run `python3 manage.py makemigrations` or `python3 manage.py makemigrations` (for Windows).
