@@ -1,0 +1,44 @@
+:root {
+    --color: rgb(154, 216, 255);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-inline: var(--padding-inline);
+    height: 10vh;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    padding: var(--padding-inline);
+}
+
+.link {
+    display: inline-block;
+    padding: calc(var(--padding-inline) * 1.2) var(--padding-inline);
+}
+
+a.underline-link {
+    color: var(--color);
+}
+
+a.btn-link {
+    background-color: var(--color);
+    border-radius: 1000px;
+    color: var(--bg);
+}
+
+.notebox {
+    padding: var(--padding-inline);
+    background-color: color-mix(in srgb, var(--color), var(--bg));
+    border-radius: 5px;
+    border-left: 5px solid var(--color);
+    margin-block: var(--padding-inline);
+}

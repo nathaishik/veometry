@@ -1,0 +1,85 @@
+/* General */
+:root {
+    --dec-font: coolvetica, Helvetica, sans-serif;
+    --pri-font: 'DM Sans', Helvetica, sans-serif;
+    --base-font-size: 18px;
+    --padding-inline: 1rem;
+}
+
+/* Colours */
+:root {
+    --bg: white;
+    --text: rgb(29, 29, 29);
+    --emph-text: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: black;
+        --text: rgb(231, 231, 231);
+        --emph-text: white;
+    }
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+
+body {
+    min-height: 100svh;
+    font-family: var(--pri-font);
+    font-size: var(--base-font-size);
+    font-weight: 400;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Heading */
+h1 {font-size: 3.815rem;}
+h2 {font-size: 3.052rem;}
+h3 {font-size: 2.441rem;}
+h4 {font-size: 1.953rem;}
+h5 {font-size: 1.563rem;}
+h6 {font-size: 1.25rem;}
+
+
+/* Fonts */
+@font-face {
+    font-family: 'coolvetica';
+    src: url('/static/font/coolvetica.otf');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/static/font/dm-sans.ttf');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/static/font/dm-sans-it.ttf');
+    font-style: italic;
+}
+
+/* Logo */
+.logo {
+    font-family: var(--dec-font);
+    font-size: 1.2em;
+}

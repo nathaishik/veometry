@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %} - Veometry</title>
+    <link rel="stylesheet" href="{% static 'common/base.css' %}">
+    <link rel="stylesheet" href="{% static 'home/base.css' %}">
+    {% block style %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <div class="nav-logo logo" id="nav-logo">Veometry</div>
+        <ul class="nav-links" id="nav-links">
+            <!-- <li class="nav-link-item"><a href="#" class="nav-link">New Project</a></li>
+            <li class="nav-link-item"><a href="#" class="nav-link">About</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        {% block body %}
+
+        {% endblock %}
+    </main>
+</body>
+</html>

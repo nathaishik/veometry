@@ -1,0 +1,14 @@
+# Environment
+
+.env
+
+# Databases
+
+db.sqlite3
+
+# System Generated
+.vscode
+_pycache_/
+*.pyc
+
+
