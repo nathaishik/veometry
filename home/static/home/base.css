@@ -1,5 +1,12 @@
 :root {
-    --color: rgb(154, 216, 255);
+    --color: rgb(0, 89, 144);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: rgb(154, 216, 255);
+    }
+
 }
 nav {
     display: flex;
@@ -38,7 +45,9 @@ a.btn-link {
 .notebox {
     padding: var(--padding-inline);
     background-color: color-mix(in srgb, var(--color), var(--bg));
+    color: var(--emph-text);
     border-radius: 5px;
     border-left: 5px solid var(--color);
     margin-block: var(--padding-inline);
 }
+

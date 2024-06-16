@@ -83,3 +83,19 @@ h6 {font-size: 1.25rem;}
     font-family: var(--dec-font);
     font-size: 1.2em;
 }
+
+footer {
+    padding: var(--padding-inline);
+    font-size: 1rem;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        color: var(--text);
+
+        &:hover {
+            color: var(--emph-text);
+        }
+    }
+}
